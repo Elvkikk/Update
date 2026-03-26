@@ -1,7 +1,24 @@
 // Start med att skapa en div för inloggning
+const logoDiv = document.createElement('div');
+logoDiv.id = 'logoDiv';
+logoDiv.classList.add('logo-container');
+const logoImg = document.createElement('img');
+logoImg.src = 'https://cdn-icons-png.flaticon.com/512/3135/3135715.png';
+logoImg.alt = 'Logo';
+logoImg.classList.add('logo-image');
+logoDiv.appendChild(logoImg);
+document.body.appendChild(logoDiv);
 
+const titleDiv = document.createElement('div');
+titleDiv.id = 'titleDiv';
+titleDiv.classList.add('title-container');
+const titleHeading = document.createElement('h1');
+titleHeading.textContent = 'Välkommen till Sassy';
+titleHeading.classList.add('title-heading');
+titleDiv.appendChild(titleHeading);
+document.body.appendChild(titleDiv);
 
-const loginDiv = document.getElementById('loginDiv');
+const loginDiv = document.createElement('div');
 loginDiv.id = 'loginDiv';
 loginDiv.classList.add('login-container');
 const loginForm = document.createElement('form');
