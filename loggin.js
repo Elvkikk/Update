@@ -65,3 +65,5 @@ loginForm.addEventListener('submit', function(event) {
         
     }
 });
+
+export default loginDiv;
