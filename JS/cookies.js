@@ -79,7 +79,7 @@ backButton.classList.add('back-button');
 cookiesDiv.appendChild(backButton);
 
 backButton.addEventListener('click', function() {
-    window.location.href = 'index.html';
+    window.location.href = 'login.html';
 });
 
 document.body.appendChild(cookiesDiv);

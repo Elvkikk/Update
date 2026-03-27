@@ -38,7 +38,7 @@ backButton.classList.add('back-button');
 passwordDiv.appendChild(backButton);
 
 backButton.addEventListener('click', function() {
-    window.location.href = 'index.html'; 
+    window.location.href = 'login.html'; 
 });
 
 document.body.appendChild(passwordDiv);

@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  gap: 1rem;
+  padding: 1.25rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(180deg, #f8fafc 0%, #eef4fb 100%);
+  color: #1f2937;
+}
+
+body.cookies-view {
+  justify-content: flex-start;
+  align-items: stretch;
+  background: linear-gradient(180deg, #f8fafc 0%, #eef4fb 100%), url("../20_rid__tidskriftsst_ll_stadsbiblioteket_g_teborg_karl_andersson___s_ner_1.jpg") center/cover no-repeat;
+  padding: 1.25rem;
+}
+
+.cookies-container {
+  width: min(100%, 900px);
+  margin: 0 auto;
+  padding: 1.5rem;
+  border-radius: 14px;
+  background: #ffffff;
+  border: 1px solid #dbe3ee;
+  box-shadow: 0 12px 26px rgba(15, 23, 42, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.cookies-heading {
+  margin: 0 0 0.25rem;
+  font-size: clamp(1.4rem, 2.2vw, 2rem);
+  line-height: 1.2;
+  color: #0f172a;
+}
+
+.cookies-subheading {
+  margin: 0.5rem 0 0;
+  font-size: clamp(1rem, 1.8vw, 1.25rem);
+  color: #1e3a5f;
+}
+
+.cookies-info {
+  margin: 0;
+  font-size: 0.98rem;
+  line-height: 1.6;
+  color: #334155;
+}
+
+.privacy-policy-link,
+.cookies-policy-link {
+  display: inline-block;
+  color: #0f766e;
+  font-weight: 600;
+  text-decoration: none;
+  padding-bottom: 2px;
+  border-bottom: 1px solid transparent;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+.privacy-policy-link:hover,
+.cookies-policy-link:hover {
+  color: #115e59;
+  border-color: #115e59;
+}
+
+.cookies-container .back-button {
+  margin-top: 0.75rem;
+  align-self: flex-start;
+  padding: 0.68rem 1.1rem;
+  border: none;
+  border-radius: 8px;
+  background: #0f766e;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+.cookies-container .back-button:hover {
+  background: #0d5e58;
+}
+
+@media (max-width: 640px) {
+  body.cookies-view,
+  body {
+    padding: 0.75rem;
+  }
+  .cookies-container {
+    padding: 1rem;
+    border-radius: 10px;
+  }
+}

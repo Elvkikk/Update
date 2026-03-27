@@ -3,7 +3,7 @@ const logoDiv = document.createElement('div');
 logoDiv.id = 'logoDiv';
 logoDiv.classList.add('logo-container');
 const logoImg = document.createElement('img');
-logoImg.src = 'gbg_st_rgb.png';
+logoImg.src = '../img/gbg_st_rgb.png';
 logoImg.alt = 'Logo';
 logoImg.classList.add('logo-image');
 logoDiv.appendChild(logoImg);
