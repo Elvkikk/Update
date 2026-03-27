@@ -1,3 +1,14 @@
+
+<img width="1000" height="563" alt="image" src="https://github.com/user-attachments/assets/5afca09f-0efe-4a36-a7e9-045ab24040ce" />
+
+
+
+
+
+
+
+
+
 # Sassy
 
 Sassy is a small frontend prototype for a modernized library login experience inspired by Biblioteken i Goteborg. The project uses plain HTML, JavaScript, and Sass, with each page rendered through DOM creation in JavaScript modules and styled through compiled CSS files.
