@@ -1,3 +1,5 @@
+document.body.classList.add('login-view');
+
 // Start med att skapa en div för inloggning
 const logoDiv = document.createElement('div');
 logoDiv.id = 'logoDiv';

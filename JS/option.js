@@ -28,7 +28,7 @@ optionDiv4.textContent = 'Tillbaka till startsidan';
 optionDiv.appendChild(optionDiv4);
 
 optionDiv1.addEventListener('click', function() {
-    
+   window.location.href = 'register.html'; 
 });
 
 optionDiv2.addEventListener('click', function() {

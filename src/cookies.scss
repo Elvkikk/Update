@@ -19,7 +19,8 @@ body {
 body.cookies-view {
 	justify-content: flex-start;
 	align-items: stretch;
-	background: linear-gradient(180deg, #f8fafc 0%, #eef4fb 100%), url("../20_rid__tidskriftsst_ll_stadsbiblioteket_g_teborg_karl_andersson___s_ner_1.jpg") center / cover no-repeat;
+	background: linear-gradient(180deg, rgba(248, 250, 252, 0.78) 0%, rgba(238, 244, 251, 0.78) 100%),
+		url("../img/20_rid__tidskriftsst_ll_stadsbiblioteket_g_teborg_karl_andersson___s_ner_1.jpg") center / cover no-repeat;
 	padding: 1.25rem;
 }
 
