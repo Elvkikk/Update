@@ -9,9 +9,9 @@
 
 
 
-# Sassy
 
-Sassy is a small frontend prototype for a modernized library login experience inspired by Biblioteken i Goteborg. The project uses plain HTML, JavaScript, and Sass, with each page rendered through DOM creation in JavaScript modules and styled through compiled CSS files.
+
+This is a small frontend prototype for a modernized library login experience inspired by Biblioteken i Goteborg. The project uses plain HTML, JavaScript, and Sass, with each page rendered through DOM creation in JavaScript modules and styled through compiled CSS files.
 
 ## Pages
 
@@ -40,19 +40,19 @@ img/      Images used in the interface
 
 1. Install dependencies:
 
-```bash
+```zsh
 npm install
 ```
 
 2. Build the Sass files:
 
-```bash
+```zsh
 npm run build
 ```
 
 3. To keep styles compiling while you work:
 
-```bash
+```zsh
 npm run watch
 ```
 
