@@ -2,6 +2,9 @@ const heading = document.createElement('h1');
 heading.textContent = 'Biblioteken i Göteborg';
 heading.classList.add('password-heading');
 
+document.body.classList.remove('login-view');
+document.body.classList.add('password-view');
+
 const passwordDiv = document.createElement('div');
 passwordDiv.id = 'passwordDiv';
 passwordDiv.classList.add('password-container');
@@ -27,6 +30,7 @@ newPasswordInput.placeholder = 'Bibliotekskortsnummer/personnummer';
 newPasswordInput.id = 'password';
 newPasswordInput.classList.add('newpassword-input');
 passWordForm.appendChild(newPasswordInput);
+passwordDiv.appendChild(passWordForm);
 
 const backButton = document.createElement('button');
 backButton.textContent = 'Tillbaka';
@@ -34,8 +38,7 @@ backButton.classList.add('back-button');
 passwordDiv.appendChild(backButton);
 
 backButton.addEventListener('click', function() {
-    passwordDiv.remove();
+    window.location.href = 'index.html'; 
 });
 
-
-export default passwordDiv;
+document.body.appendChild(passwordDiv);

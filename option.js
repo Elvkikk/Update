@@ -32,23 +32,16 @@ optionDiv1.addEventListener('click', function() {
 });
 
 optionDiv2.addEventListener('click', function() {
-    return import('./passWord.js').then(module => {
-        const passwordDiv = module.default;
-        document.body.appendChild(passwordDiv);
-    });
-    
+    window.location.href = 'password.html';
 });
 
 optionDiv3.addEventListener('click', function() {
-    return import('./cookies.js').then(module => {
-        const cookiesDiv = module.default;
-        document.body.appendChild(cookiesDiv);
-    });
-    
+    window.location.href = 'cookies.html';
 });
 
 optionDiv4.addEventListener('click', function() {
-    console.log('Tillbaka till startsidan klickat');
+    window.location.href = 'https://www.gotlib.goteborg.se/';
+    
     
 });
 

@@ -1,3 +1,7 @@
+
+document.body.classList.remove('login-view'); 
+document.body.classList.add('cookies-view');
+
 const cookiesDiv = document.createElement('div');
 cookiesDiv.id = 'cookiesDiv';
 cookiesDiv.classList.add('cookies-container');
@@ -75,10 +79,8 @@ backButton.classList.add('back-button');
 cookiesDiv.appendChild(backButton);
 
 backButton.addEventListener('click', function() {
-    cookiesDiv.remove();
+    window.location.href = 'index.html';
 });
 
 document.body.appendChild(cookiesDiv);
-
-export default cookiesDiv;
 
