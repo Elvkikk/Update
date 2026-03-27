@@ -3,17 +3,23 @@ const logoDiv = document.createElement('div');
 logoDiv.id = 'logoDiv';
 logoDiv.classList.add('logo-container');
 const logoImg = document.createElement('img');
-logoImg.src = 'https://cdn-icons-png.flaticon.com/512/3135/3135715.png';
+logoImg.src = 'gbg_st_rgb.png';
 logoImg.alt = 'Logo';
 logoImg.classList.add('logo-image');
 logoDiv.appendChild(logoImg);
 document.body.appendChild(logoDiv);
 
+const greetingMessageDiv = document.createElement('div');
+greetingMessageDiv.id = 'greetingMessageDiv';
+greetingMessageDiv.classList.add('greeting-message-container');
+greetingMessageDiv.textContent = 'Välkommen till biblioteket!';
+document.body.appendChild(greetingMessageDiv);
+
 const titleDiv = document.createElement('div');
 titleDiv.id = 'titleDiv';
 titleDiv.classList.add('title-container');
-const titleHeading = document.createElement('h1');
-titleHeading.textContent = 'Välkommen till Sassy';
+const titleHeading = document.createElement('h3');
+titleHeading.textContent = 'Logga in på ditt bibliotekskonto';
 titleHeading.classList.add('title-heading');
 titleDiv.appendChild(titleHeading);
 document.body.appendChild(titleDiv);
@@ -47,19 +53,21 @@ document.body.appendChild(loginDiv);
 const usernameInput = "Fredrik";
 const passwordInputValue = "1234";
 
-// Lägg till en event listener för inloggningsformuläret
+
 loginForm.addEventListener('submit', function(event) {
     event.preventDefault(); // Förhindra att formuläret skickas
 
     const username = userInforInput.value;
     const password = passwordInput.value;
 
-    // Här kan du lägga till din inloggningslogik, t.ex. validering eller API-anrop
+    
     if (username === usernameInput && password === passwordInputValue) {
-        console.log('Inloggning lyckades');
+        window.location.href = 'https://bibliotek.goteborg.se/';
     } else {
-        const errorMessage = document.createElement('p');
-        errorMessage.textContent = 'Felaktigt användarnamn eller lösenord';
+        const errorMessage = document.createElement('div');
+        const errorMessageText = document.createTextNode('Felaktigt användarnamn eller lösenord');
+        errorMessage.id = 'errorMessage';
+        errorMessage.appendChild(errorMessageText);
         errorMessage.classList.add('error-message');
         loginForm.appendChild(errorMessage);
         
